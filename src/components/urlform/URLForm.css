@@ -1,0 +1,227 @@
+.form.contain {
+    background-color: var(--Light-Gray);
+    flex-flow: column wrap;
+    align-items: center;
+    height: 800px;
+}
+
+.contain form {
+    position: relative;
+    width: 80%;
+    padding: 4rem;
+    margin-top: -5%;
+    background: url(../../assets/images/bg-shorten-desktop.svg) var(--Dark-Violet) no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.contain form .error{
+    color: red;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.contain form input[type="text"] {
+    width: 80%;
+    height: 50px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.contain form input[type="text"].input-error {
+    border: 2px solid red;
+    color: red;
+}
+
+.contain form input[type="text"]:focus {
+    outline: none;
+}
+
+.contain form button {
+    height: 50px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Dark-Violet);
+    color: white;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.contain ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 80%;
+    margin-top: 50px;
+    width: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 600px;
+    scrollbar-color: gray transparent;
+    border-radius: 10px;
+}
+
+.contain ul li {
+    margin-bottom: 20px;
+}
+
+.contain ul li div {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contain ul li div p{
+    width: 40%;
+}
+
+.contain ul li div span {
+    width: 35%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.contain ul li hr {
+    display: none;
+}
+
+.contain ul li div span p {
+    color: var(--Cyan);
+    width: 70%;
+    text-align: center;
+}
+
+.contain ul li div span .list-action{
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain ul li div span button {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.contain ul li div span button.delete{
+    background-color: red !important;
+}
+
+.contain ul li div span button.delete:hover{
+    background-color: rgb(255, 98, 98) !important;
+}
+
+.contain ul li div span button.copied{
+    background-color: var(--Dark-Violet) !important;
+}
+
+@media screen and (max-width: 1404px) {
+    .contain form input[type="text"] {
+        width: 70%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .contain form input[type="text"] {
+        width: 65%;
+        margin-right: 5%;
+    }
+    .contain ul li div span{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .contain form input[type="text"] {
+        width: 65%;
+        margin-right: 0;
+    }
+    .contain ul li div{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contain ul li div p{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contain ul li div span{
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .contain form .error{
+        margin-top: 50px;
+    }
+    .contain form{
+        padding: 1.8rem;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .contain form input[type="text"] {
+        width: 100%;
+    }
+    .contain form button{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .contain form{
+        padding: 1.5rem;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .contain form{
+        margin-top: -10%;
+    }
+    .contain ul li hr{
+        display: inline;
+        width: 100%;
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .contain ul li div{
+        padding: 1rem 0.2rem;
+    }
+    .contain ul li div span{
+        padding: 1rem 0;
+    }
+    .contain ul li div span button{
+        padding: 0.5rem 5rem
+    }
+    .contain ul li div span p{
+        width: 100%;
+    }
+    .contain ul li div span .list-action{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 339px){
+    .contain form{
+        padding: 1rem;
+    }
+}

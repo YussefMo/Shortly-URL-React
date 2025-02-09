@@ -1,0 +1,108 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+nav .nav 
+img,ul {
+    margin-right: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    margin-right: 2.5rem;
+    text-decoration: none;
+    color: var(--Grayish-Violet);
+    font-weight: var(--fw-700);
+}
+
+nav ul li a:hover{
+    color: var(--Very-Dark-Violet);
+}
+
+nav .action button {
+    margin-right: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: none;
+    font-weight: var(--fw-700);
+    background: transparent;
+    cursor: pointer;
+}
+
+nav .mob-nav{
+    top: 100px;
+    position: fixed;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--Dark-Violet);
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 0;
+}
+
+nav .mob-nav ul{
+    flex-flow: column wrap;
+    margin: 0;
+}
+
+nav .mob-nav ul li{
+    margin: 0 0 20px 0;
+}
+
+nav .mob-nav ul li a{
+    color: white;
+    margin-right: 0;
+}
+
+nav .mob-nav hr{
+    width: 90%;
+    color: var(--Grayish-Violet);
+    margin: 10px 0;
+}
+
+nav .mob-nav .action{
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+}
+
+nav .mob-nav .action button{
+    color: white;
+    margin-right: 0;
+    padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 900px) {
+    nav .nav{
+        width: 100%;
+        flex-flow: row wrap;
+        padding: 2rem 5rem;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav .nav{
+        padding: 2rem 2rem;
+    }
+}
