@@ -42,7 +42,6 @@ export function useShorten(submitURL) {
                     }
                 );
 
-                console.log(response.data.data.tiny_url);
                 setShortenedURL({ submitURL, shortenedURL: response.data.data.tiny_url });
             } catch (error) {
                 if (error.request) {
